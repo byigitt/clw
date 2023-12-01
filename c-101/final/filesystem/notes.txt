@@ -1,0 +1,52 @@
+-- POINTERS
+
+-- STRUCTURES
+
+create a structure
+  struct Struct_name {
+    int variable1;
+    int variable2;
+    int variable3;
+  };
+
+use this as variable
+  struct Struct_name structer[3]; // using this struct for 3 times
+  // also you can use this as a parameter on functions same type
+
+give value to a variable example
+  for (int i = 0; i < 3; i++) {
+    printf("Enter v1, v2, v3: ");
+    scanf("%d %d %d", &structer[i].variable1, &structer[i].variable2, &structer[i].variable3);
+  };
+
+-- FILESYSTEM
+
+open file (read = r, write = w)
+  FILE *variable_name = fopen("filename.txt", "r");
+  if (variable_name == NULL) // File isnt found.
+
+read line by line from file
+         variable_name  formatting  returned values
+  fscanf(variable_name, "%d %s %c", &variable1, variable2, &variable3) == 3
+
+write line to file
+  fprintf(variable_name, "%d %s %d", variable1, variable2, variable3)
+
+do not forget to close files
+  fclose(variable_name)
+
+-- KNOWN FUNCTIONS
+- string.h
+strlen(char_array);
+toupper(string);
+tolower(string);
+
+- time.h
+- stdlib.h
+srand(time(0));
+value = 1 + (rand() % 9);
+
+fopen(dir_path, file_mode);
+fscanf(file_variable, format, ...variables);
+fprintf(file_variable, format, ...variables);
+fclose(file_variable);
