@@ -1,0 +1,2 @@
+wE wiLl ConVERt upPercASe To LowErCAse and loWerCASE tO UppERcAsE
+Display the ORIGINAL and the UPDATED versions on the screen
